@@ -1,4 +1,4 @@
-# This Repository includes all Semantic data processing assignment created in WS24/25 in Technische Hochschule Würzburg-Schweinfurt (THWS)
+# This Repository includes all Semantic data processing assignments created in WS24/25 in Technische Hochschule Würzburg-Schweinfurt (THWS)
 
 ### All assignment was created by:
   - Mark Erokhin (mark.erokhin@study.thws.de);
