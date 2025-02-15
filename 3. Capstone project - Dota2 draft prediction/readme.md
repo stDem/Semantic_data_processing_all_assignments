@@ -4,7 +4,6 @@ Created by:
 - Anastasiia Demidova (anastasiia.demidova@study.thws.de);
 - Mark Erokhin (mark.erokhin@study.thws.de)
 
-Gihub link: https://github.com/stDem/Dota2_draft_prediction.git.
 
 A web application that helps players **predict the best hero picks** in Dota 2 drafts using **machine learning and NLP**. The app recommends heroes based on **ally and enemy picks** and provides **detailed explanations** using AI.
 
