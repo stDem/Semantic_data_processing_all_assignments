@@ -1,0 +1,236 @@
+@font-face {
+  font-family: "grotesk";
+  src: url(./Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf) format("truetype");
+}
+
+html {
+  scroll-behavior: smooth;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #9f9a9a;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;  
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'grotesk', sans-serif;
+  font-size: 22px;
+  color: #341616;
+  line-height: 1.2;
+}
+
+.container {
+  --width: 1180px;
+  --padding: 30px;
+  max-width: calc(var(--width) + var(--padding) * 2);
+  margin: 0 auto;
+  padding: 0 var(--padding);
+}
+
+.container-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8em;
+}
+.header {
+  padding: 0.1em 0;
+  background-color: #341616;
+  margin-bottom: 2em;
+}
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.header__link, button {
+  padding: 0.5em 1.3em;
+  border-radius: 0.3em;
+  background: #db3131;
+  font-size: 0.8em;
+  border: 0.08em solid transparent;
+  transition-property: color, background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.header__link:focus-visible {
+  border-color: #4f58be;
+}
+.header__link:hover, button:hover {
+  color: #fff;
+  background-color: #7b4040;
+}
+.header__logo {
+  cursor: pointer;
+  width: 4em;
+}
+
+.header h1{
+  color: #efabab;
+}
+
+.teams {
+  display: grid;
+  margin-bottom: 20px;
+  columns: 2;
+}
+
+.teams h2{
+  font-size: 1.3em;
+  margin: 0.6em 0;
+}
+
+#hero-list, #ally-picks, #enemy-picks, #recommendations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2em
+}
+
+#recommendations{
+  min-height: 3em;
+  width: 70vw;
+  border: 2px solid #304a7e;
+  border-radius: 0.3em;
+}
+
+#hero-list{
+  justify-content: flex-start;
+
+}
+
+.hero {
+  padding: 0.3em;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.hero:hover {
+  border: 1px solid #341616;
+}
+
+.hero-button{
+  padding: 0.4em;
+  margin: 0.2em;
+  border: 1px solid #341616;
+  border-radius: 0.3em;
+}
+
+.selected-ally {
+  background-color: lightgreen;
+}
+
+.selected-enemy {
+  background-color: lightcoral;
+}
+
+button {
+  background-color: #341616;
+  color: #efabab;
+}
+.ally-btn{
+  background-color: #2a4f20;
+}
+.ally-btn:hover{
+  background-color: #57a342;
+}
+.btn-toggle{
+  width: 15em;
+}
+
+.main_container{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.3em;
+}
+
+.main_container h2{
+  margin-bottom: 0.4em;
+}
+
+.heroes_container, .expl_container{
+  max-width: 50%;
+}
+
+.ally-pick, .enemy-pick{
+  padding: 0.4em;
+  margin: 0.2em;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+
+}
+
+#ally-picks{
+  min-height: 3em;
+  width: 92vw;
+  border: 1px solid #2a4f20;
+}
+
+#enemy-picks{
+  min-height: 3em;
+  width: 92vw;
+  border: 1px solid #341616;
+}
+
+.footer {
+  margin-top: 1em;
+  padding: 1em 0 1em;
+  background-color: #341616;
+  color: #efabab;
+
+}
+.footer__container {
+  display: grid;
+  gap: 0.5em;
+  grid-template-areas: "logo ." "copyright contacts";
+}
+.footer__logo {
+  grid-area: logo;
+  cursor: pointer;
+  width: 4em;
+}
+.footer__copyright {
+  grid-area: copyright;
+  align-self: end;
+}
+.footer__contacts {
+  grid-area: contacts;
+  justify-self: end;
+  min-width: 7.5em;
+}
+.footer__contact {
+  margin-bottom: 0.3em;
+}
+.footer__contact:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 940px) {
+  .header h1{
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 18px;
+  }
+  .container{
+    --padding: 5px;
+  }
+}

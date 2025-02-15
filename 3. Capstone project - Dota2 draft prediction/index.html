@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dota 2 Draft Prediction</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./dota_logo.png"/>
+    <script src="./script.js" defer></script>
+
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__container">
+      <a href="#">
+        <img src="./dota_logo.png" alt="Dota2_logo" class="header__logo">
+      </a>
+      <h1>Dota 2 Draft Prediction</h1>
+      <div class="header__links">
+        <a href="#ally-picks" class="header__link">Get Prediction</a>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="container container-center">
+
+      <button class="btn-toggle ally-btn" onclick="toggleTeam()">🔄 Switch to Enemy Team</button>
+
+      <section class="teams">
+          <div>
+              <h2>✅ Your Team</h2>
+              <div id="ally-picks">
+                <span class="ally-pick"></span>
+              </div>
+          </div>
+
+          <div>
+              <h2>❌ Enemy Team</h2>
+              <div id="enemy-picks">
+                <span class="enemy-pick"></span>
+              </div>
+          </div>
+      </section>
+    </div>
+
+   <div class="container container-center">
+    <button onclick="getRecommendation()">🔮 Get Recommendations</button>
+
+    <h2>🛡 Recommended Heroes</h2>
+    <div id="recommendations"></div>
+
+    <div class="main_container">
+      <div class="heroes_container">
+        <h2>Available Heroes</h2>
+        <div id="hero-list"></div>
+      </div>
+
+      <div class="expl_container">
+        <h2>📖 Explanation</h2>
+        <p id="explanation"></p>
+      </div>
+    </div>
+   </div>
+  </main>
+
+
+  <footer class="footer"> 
+    <div class="container footer__container">
+      <img src="./dota_logo.png" alt="light logo Work Space" class="footer__logo">
+      <p class="footer__copyright">© Dota 2 Draft Prediction, 2025</p>
+
+      <ul class="footer__contacts">Developers:
+        <li class="footer__contact">
+          <a href="#" class="footer__link">Anastasiia Demidova</a>
+        </li>
+        <li class="footer__contact">
+          <a href="#" class="footer__link">Mark Erokhin</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
